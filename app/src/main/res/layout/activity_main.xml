@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/download" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="0dp"
+            android:layout_height="58dp"
+            android:layout_weight="0.5"
+            android:onClick="add1"
+            android:text="Insert Students" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="58dp"
+            android:layout_weight="0.5"
+            android:onClick="add2"
+            android:text="Insert Companies" />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="58dp"
+        android:onClick="del1"
+        android:text="Delete Students" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="58dp"
+        android:onClick="del2"
+        android:text="Delete Companies" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_weight="0.5"
+        android:onClick="upd1"
+        android:text="Update Students" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="58dp"
+        android:onClick="upd2"
+        android:text="Update Companies" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_weight="0.5"
+        android:onClick="fetch"
+        android:text="View Students" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_weight="0.5"
+        android:onClick="test3"
+        android:text="View Companies" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:onClick="test4"
+        android:text="Eligible Students" />
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>
